@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: silver;
+    font-family: "roboto", sans-serif;
+}
+#maincontainer {
+    width: 1000px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 0 auto;
+    
+}
+.barranavegacion {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display:flex;
+}
+.barranavegacion h1 {
+    color: white;
+    padding: 30px;
+    margin-left: 60px;
+}
+.barranavegacion a {
+    color: white;
+    margin-top: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.logout {
+    width: 100px;
+    height: 30px;
+    margin-top: 32px;
+    margin-left: 203px;
+    background-color: deepskyblue;
+    color: white;
+}
+.contenido {
+    display:flex;
+    margin-top:30px;
+    
+}
+.cuerpo {
+    margin-left:90px;
+}
+.usercard {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;   
+}
+
+.header {
+    height: 90px;
+    width: 100%;
+    background-color: deepskyblue;
+
+}
+.fotoperfil {
+    width: 100px;
+    height:100px;
+    padding:5px;
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.userbody {
+    padding:20px;
+    margin-top:20px;
+}
+.userbody h1, h3,p {
+
+    margin: 10px;
+}
+.ubi {
+    height: 20px;
+}
+.educacion {
+    width:500px;
+    height:300px;
+    background-color: white;
+    margin-top:30px;
+    border: 2px solid black;
+    border-radius: 5px;   
+    
+}
+
+.educacionheader {
+    width:100%;
+    height: 70px;
+    background-color: grey;
+}
+.educacionheader h1 {
+    color:white;
+    padding:15px;
+    margin-left:20px;
+}
+.educacionbody {
+    margin:20px;
+}
+.educacionbody h3 {
+    font-weight: normal;
+}
+.sidepanel {
+    margin-left:50px;
+
+}
+
+.solicitudes {
+    height: 170px;
+    width: 270px;
+    background-color:white;
+    border: 2px solid black;
+}
+
+.solicitudesheader {
+    width: 100%;
+    height: 50px;
+    background-color:grey;
+    border: 2px solid black;
+    
+}
+.solicitudesheader  h1{
+    font-size:17px;
+    padding: 10px;
+    margin-left:15px;
+    margin-top:5px;
+    color:white;
+    
+    
+}
+.circle{
+    border-radius: 70%;
+    border: 2px solid;
+    padding: 7px;    
+}
+.solicitudesbody {
+    padding:5px;
+    display: inline-block;
+    margin-top:10px;
+    margin-left:10px;
+
+}
+.solicitud1 img{
+    height:40px;
+    justify-content: flex-end;
+
+}
+#accept {
+    height:40px;
+    margin-left:20px;
+}
+#deny {
+    height:40px;
+}
+.solicitud2 img{
+    height:40px;
+}
+.solicitud2 #accept {
+    margin-left:40px;
+}
+.conexiones {
+    width: 270px;
+    height: 350px;
+    background-color: white;
+    border: 2px solid black;
+    margin-top:30px;
+
+}
+
+.conexionesheader {
+    width: 100%;
+    height: 50px;
+    background-color:grey;
+
+}
+.conexionesheader h1 {
+    color: white;
+    font-size: 17px;
+    padding:10px;
+    margin-left:20px;
+
+}
+.conexionesbody {
+    padding:5px;
+    height: 230px;
+    margin-top:5px;
+}
+.conexionesbody img {
+    height:40px;
+    justify-content: center;
+
+}
+.conexionesbottom{
+    width:100%;
+    border: 2px solid black;
+    height: 50px;
+}
+.conexionesbottom a{
+    margin-left:30px;
+    
+
+}
+

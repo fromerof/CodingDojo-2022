@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    background-color: dodgerblue;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.col {
+    flex: 1;
+    background-color: lightblue;
+    padding: 10px;
+    margin:10px;
+
+}
+
+.col-2{
+    flex:2;
+    background-color:deepskyblue;
+    padding: 10px;
+    margin:10px;
+}
+
+.col-3{
+    background-color:lightskyblue;
+    flex: 3;
+    padding: 10px;
+    margin:10px;
+
+
+}

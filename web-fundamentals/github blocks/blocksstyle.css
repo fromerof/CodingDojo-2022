@@ -1,0 +1,56 @@
+
+h1{
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+#container{
+    height:930px;
+    width: 840px;
+    background-color:whitesmoke;
+    margin: 0 auto;
+}
+    
+.top {
+    width: 800px;
+    height: 240px;
+    margin: 20px;
+    background-color:cyan;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.middle {
+    width: 800px;
+    height: 240px;
+    margin: 20px;
+    background-color: pink;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.bottom {
+    width: 800px;
+    height: 240px;
+    margin: 20px;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.piepagina{
+    text-align: center;
+}
+
+img.octocat {
+    height:200px;
+    margin:40px; 
+    align-items:center;
+}

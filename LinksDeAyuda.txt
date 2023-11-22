@@ -1,0 +1,8 @@
+	LINK DE INTERES PARA PYTHON
+
+[ FUNCIONES INTERMEDIAS 1
+https://bobbyhadz.com/blog/python-typeerror-list-indices-must-be-integers-or-slices-not-dict
+]
+[DATA STRUCTURES
+https://www.freecodecamp.org/news/learn-algorithms-and-data-structures-in-python/
+]

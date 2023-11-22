@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Perfil</title>
+        <link rel="stylesheet" href="onclickstyle.css">
+    </head>
+    <body>
+        
+        <div id="maincontainer">
+            <div class="barranavegacion"> 
+                <h1>Dojonary</h1>
+                <input class = "buscar" type="search" placeholder ="Search">
+                <button type="button" class="logout" onclick="cerrar(this)">Login
+                </button>
+            </div>
+            <div class="contenido">
+                <div class="cuerpo">
+                    <div class="usercard">
+                        <div class="userbody">
+                            <h1>Ninja</h1>
+                            <h3>Noun</h3>
+                            <p>Plural: ninjas</p>
+                            <input type="button" class="likes" placeholder ="Likes" value="13 Likes" onclick="alerta(this)">
+                        </div>
+                        <div class = "userdescription">
+                            <h3>A Practitioner skilled in the<br> <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></h3>
+                        </div>
+                    </div>
+                    <div class="usercard2">
+                        <div class="userbody2">
+                            <h1>Ninja</h1>
+                            <h3>Noun</h3>
+                            <p>Plural: ninjas</p>
+                            <input type="button" value="37 Likes" class="likes" onclick="alerta(this)">
+                        </div>
+                        <div class = "userdescription">
+                            <h3>A <a href="#">programmer</a> who breakes<br>down problems with <a href="#">zen</a>-like<br>focus</h3>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="sidepanel">
+                    <div class="solicitudes">
+                        <div class="solicitudesbody">
+                            <h2>Dojonary is<br> defined by YOU</h2>
+                            <input type="text" id="definition" placeholder="Add Definition" onclick="borrar(this)">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    <script type="text/javascript" src="eventonclick.js"></script>
+    </body>
+</html>

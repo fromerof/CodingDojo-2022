@@ -1,0 +1,70 @@
+#container {
+    height: 350px;
+    width: 700px;
+    background-color:whitesmoke;
+    margin: 0 auto;
+    border: solid;
+}
+
+.top {
+    background-color: deepskyblue;
+    width: 700px;
+    height: 100px;
+}
+
+.top img {
+    width: 80px;
+    position: absolute;
+    top: 70px;
+    margin-left: 30px;
+}
+
+h1 {
+    position: absolute;
+    top: 135px;
+    margin-left:20px;
+
+}
+.description {
+    background-color:white;
+    width: 700px;
+    height: 250px;
+}
+#location {
+    position: absolute;
+    top: 200px;
+    margin-left: 20px;
+    width: 15px;
+}
+h3 {
+    position: absolute;
+    font-weight: 200;
+    top: 185px;
+    left: 200px
+
+}
+p {
+    position: absolute;
+    font-weight: 200;
+    top: 220px;
+    margin-left: 20px
+    
+
+}
+div p:nth-child(5){
+    position: absolute;
+    top:240px;
+    margin-left:20px;
+}
+.edit {
+    position: absolute;
+    width:20px;
+    margin-left: 20px;
+    top:290px;
+}
+.link {
+    position: absolute;
+    margin-left:50px;
+    top:290px;
+}
+

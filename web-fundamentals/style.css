@@ -1,0 +1,16 @@
+#ninja {
+    background-color: aqua;
+    block-size: 90px;
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifß;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+#naruto {
+    background-color: blueviolet;
+    margin-top: 1px;
+}
+
+img {
+    size: 100px;

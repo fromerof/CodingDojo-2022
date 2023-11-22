@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+h2 {
+    justify-content: center;
+    text-align: center;
+    background-color: bisque;
+    width: 500px;
+    height: 100px;
+    margin: 30px;
+}
+
+.white {
+    width: 100px;
+    height: 100px;
+    margin-left:-4px;
+    background-color: beige;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.black {
+    width: 100px;
+    height: 100px;
+    margin-left: -4px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: top;
+
+}

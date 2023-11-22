@@ -1,0 +1,52 @@
+.gris{
+    width:950px;
+    background-color: silver;
+    margin: 0px auto;
+    padding:10px;
+    overflow:hidden;
+}
+.verde{
+    background-color:green;
+    height:150px;
+    margin: 10px;
+    vertical-align: top;
+
+
+}
+.azul{
+    background-color:blue;
+    width: 200px;
+    height:300px;
+    margin:5px;
+    float:left;
+    margin:10px;
+
+}
+.rojo{
+    background-color: red;
+    overflow: auto;
+    height:400px;
+    width:700px;
+    margin:20px;
+    padding: 10px;
+
+}
+.amarillo{
+    width: 210px;
+    height:200px;
+    background-color:yellow;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    padding:0px;
+}
+#ads{
+    height:120px;
+    width:660px;
+    background-color: purple;
+    margin:10px;
+    margin-left:5px;
+}
+
+
+

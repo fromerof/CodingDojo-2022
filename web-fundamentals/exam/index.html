@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header class = "navigation">
+                    <img onclick="cambiarNombre(this)" class="logo" src="./option-i-bootstrap/logo.png" alt ="menu">
+                    <ul>
+                        <li><a class="home" href="#">Home</a></li> <!-- FUNCION JAVASCRIPT -->
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Themes</a></li>
+                        <li><a href="#">Expo</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <select> 
+                            <option value="Version4.3">v4.3.1</option>
+                            <option value="Version4.3">v4.3.0</option>
+                            <option value="Version4.3">v4.2.4</option>
+                            <option value="Version4.3">v4.0</option>
+                    </select>
+                    <ul>
+                        <li><a  href="#"><img class="img-links" src="./option-i-bootstrap/ico-git.png" alt=""></a></li>
+                        <li><a  href="#"><img class="img-links" src="./option-i-bootstrap/ico-twitter.png" alt=""></a></li>
+                        <li><a  href="#"><img class="img-links" src="./option-i-bootstrap/ico-slack.png" alt=""></a></li>
+                        <li><a  href="#"><img class="img-links" src="./option-i-bootstrap/ico-coll.png" alt=""></a></li>
+                    </ul>
+                    <button onclick="alerta()">Download</button> <!-- FUNCION JAVASCRIPT --> 
+            </header>
+            <main>
+                <div class="main-content">
+                    <h1>Bootstrap</h1>
+                    <p>Build responsive, mobile-first projects on the web <br>
+                    with the world´s most popular front-end <br>
+                    component library.</p> <br>
+                    <p>Bootstrap is an open source toolkit for<br>
+                    developing with HTML, CSS, and JS. Quickly <br>
+                    prototype your ideas or build your entire app with <br>
+                    our Sass variables and mixins, responsive grid <br>
+                    system, extensive prebuilt components, and <br>
+                    powerful plugins built on jQuery.</p>
+                    <button class="getStarted">Get Started</button ><button class="download">Download</button>
+                    <p class="version">Currently v4.3.1</p>
+                    <div class="ad">
+                        <img src="./option-i-bootstrap/ad-segment.png" alt="ads">
+                        <p>Collect customer data once with a single API.<br>
+                            Power your entire tech<br>
+                            stack. <br>
+                            <span>ads via Carbon</span>
+                        </p>
+                        
+                    </div>
+                </div>
+                <img class="main-image" src="./option-i-bootstrap/main_img.png" alt="foto" onmouseover="cambiarImagen()"><!-- FUNCION JAVASCRIPT --> 
+            </main>
+            <section>
+                <div class="content">
+                    <div class="installation">
+                        <div class="icono">
+                            <img src="./option-i-bootstrap/ico-install.png" alt="">
+                            <h2>Installation</h2>
+                        </div>
+                        <p>Include Bootstrap´s source Sass and<br>
+                        JavaScript files via npm, Composer<br>
+                        or Meteor. Package managed<br>
+                        installs don´t include<br>
+                        documentation, but do include our<br>
+                        build system and readme.</p>
+                        <p><span style="color: blue;" >$</span> npm <span style="color:#61787f ;" > install </span> bootstrap</p><br>
+                        <p><span style="color: blue;" >$</span> gem <span style="color:#61787f ;" >install </span> bootstrap <span style="color:#6279b7 ;" > -v </span> 4.3.1</p>  
+                        <div class="border"></div>
+                        <button class="content-button">Read installation docs</button>  
+                    </div>
+                    
+                    <div class="bootstrapCDN">
+                        <div class="icono">
+                            <img src="./option-i-bootstrap/ico-cdn.png" alt="iconss">
+                            <h2>BootstrapCDN</h2>
+                        </div>
+                        <p>When you only need to include<br>
+                        Bootstrap´s compiled CSS or JS, you<br>
+                        can use <a href="#">BootstrapCDN</a>.</p>
+                        <h3>CSS only</h3>
+                        <!-- NO PUEDO AGREGAR EL SIGNO "<" ANTES DE LINK PORQUE EL VALIDATOR ME DICE Q NO ES VALIDO-->
+                        <p><span style="color:blue"> link </span><span style="color:#9baeda">rel=</span><span style="color:red">"stylesheet" </span><span style="color:#9baeda">href=</span><span style="color:red">"http</span></p>
+                        <h3>JS, Popper.js, and jQuery</h3> 
+                        <p><span style="color:blue"> script </span><span style="color:#9baeda">src=</span><span style="color:red">"https://code.jquery </span></p>
+                        <p><span style="color:blue"> script </span><span style="color:#9baeda">src=</span><span style="color:red">"https://cdnjs.cloudf </span></p>
+                        <p><span style="color:blue"> script </span><span style="color:#9baeda">src=</span><span style="color:red">"https://stackpath.bo </span></p>
+                        <div class="border"></div>
+                        <button class="content-button">Explore the docs</button>  
+                    </div>
+                    <div class="official-themes">
+                        <div class="icono">
+                            <img src="./option-i-bootstrap/ico-themes.png" alt="iconss">
+                            <h2>Official Themes</h2>
+                        </div>
+                        <p>Take Bootstrap 4 to the next level<br>
+                        with official premium themes--<br>
+                        toolkits built on Bootstrap with new<br>
+                        components and plugins, cods, and<br>
+                        build tools.</p>
+                        <img src="./option-i-bootstrap/theme_img.png" alt=""><br>
+                        <div class="border"></div>
+                        <button class="content-button">Browse themes</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer">
+                    <div class="links-interest">
+                        <ul>
+                            <li><a class="links" href="#">Github</a></li>
+                            <li><a class="links" href="#">Twitter</a></li>
+                            <li><a class="links" href="#">Examples</a></li>
+                            <li><a class="links" href="#">About</a></li>
+                        </ul>
+                        <p class="footer-p">Designed and built with all the love in the world by the<span class="black">Bootstrap team </span> with the help of <span class="black">our contributors.</span><br>
+                        Currently v4.3.1 Code licensed <span class="black">MIT</span>, docs<span class="black"> CC BY 3.0.</span></p>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+            
+
+        <script src="script.js"></script>
+    </body>
+</html>

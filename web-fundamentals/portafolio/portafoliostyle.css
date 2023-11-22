@@ -1,0 +1,64 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(164, 185, 206);
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+h6{
+    margin-bottom: -15px;
+    font-weight: lighter;
+}
+
+#midescripcion {
+    text-align:justify;
+    font-weight: lighter;
+    position: absolute;
+    top:100px;
+    left:410px;
+    size: 150px;
+}
+
+
+#linkredes{
+    margin-left: -43px;
+}
+
+#git {
+    margin-right: 30px;
+}
+
+#linked{
+    margin-right: 20px;
+}
+
+
+
+
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse
+}
+
+table th {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+
+table tr {
+    background-color: #f4f8f9;
+    border-top: 1px solid #78858e;
+    border-bottom: 1px solid #78858e;
+}
+
+
+table td {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+

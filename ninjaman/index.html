@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NinjaMan</title>    
+    <style type = "text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+        .row {
+            line-height: 0;
+        
+        }
+        .wall { 
+            background-color:coral;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+        }
+        .sushi  { 
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url("sushi.png");
+            background-size: contain;
+        }
+        .onigiri  { 
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url("onigiri.png");
+            background-size: contain;
+        }
+        .blank { 
+            background-color:black  ;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+        }
+        #ninjaman { 
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url("ninja.gif");
+            background-size: contain;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+        #redghost {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-image: url("red.gif");
+            background-size: contain;
+            position: absolute;
+            left: 40px;
+            top: 360px;
+
+        }
+    </style>
+</head>   
+<body>
+    <div id = "world"></div>
+    <div id="ninjaman"></div>
+    <div id ="redghost"></div>
+</body>
+<script type="text/javascript">
+
+var randome = [0,1,2,3];
+function Dom() {
+    var random = Math.floor(Math.random() * randome.length);
+    return random;
+}
+;
+/*
+function plano() {
+    [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+    var array[];
+    for (var mundo = 0; mundo <= 13; mundo++) {
+        arr.push[Dom()]
+            if (array.length = 13) {
+
+            }
+    }
+}
+
+
+ */
+    
+    var world = [
+        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+        [1,Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),0,Dom(),Dom(),Dom(),Dom(),0,Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),Dom(),1,Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),0,Dom(),Dom(),Dom(),Dom(),0,Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),Dom(),1],
+        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    ];
+    var worldDict =  {
+        0: "blank",
+        1: "wall",
+        2: "sushi",
+        3: "onigiri"
+    }
+    function drawWorld() {
+        output = "";
+
+        for (var row = 0; row < world.length; row++){
+            output+= "<div class = 'row'>"
+            for (var x = 0; x < world[row].length;x++){
+                output += "<div class = '" + worldDict[
+                    world[row][x]] +"'></div>"
+        }
+        output += "</div>"
+
+    }
+    document.getElementById("world").innerHTML = output;
+}
+drawWorld();
+
+var ninjaman = {
+    x: 1,
+    y: 1
+}
+
+var redghost = {
+    x:1,
+    y:1
+}
+
+function drawNinjaman(){
+    document.getElementById("ninjaman").style.top = 
+    ninjaman.y * 40 + "px"
+    document.getElementById("ninjaman").style.left = 
+    ninjaman.x * 40 + "px"
+}
+drawNinjaman()
+
+document.onkeydown = function(e){
+    if (e.keyCode == 65){ 
+        if(world[ninjaman.y][ninjaman.x - 1] != 1){//left
+        ninjaman.x--;
+        }
+    }
+    if (e.keyCode == 68){ 
+        if(world[ninjaman.y][ninjaman.x + 1] != 1){//right
+        ninjaman.x++;
+        }
+    }
+    if (e.keyCode == 83){
+        if(world[ninjaman.y + 1 ][ninjaman.x] != 1){ //down
+        ninjaman.y++;
+        }
+    }
+    if (e.keyCode == 87){
+        if(world[ninjaman.y - 1 ][ninjaman.x] != 1){
+        ninjaman.y--;
+        }
+    }
+scoreSushi = 0;
+scoreOnigiri = 0;
+if (world[ninjaman.y][ninjaman.x] = 2 ){
+    world[ninjaman.y][ninjaman.x] = 0;
+    scoreSushi += 10;
+}
+else if (world[ninjaman.y][ninjaman.x] = 3 ){
+    world[ninjaman.y][ninjaman.x] = 0;
+    scoreOnigiri += 5;
+}
+total = scoreSushi + scoreOnigiri;
+drawNinjaman();
+drawWorld()
+console.log(total);
+
+
+}
+
+
+</script>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+/* var leftValue = 40, topValue = 40, direction = "down"
+function update(){
+    		document.getElementById("ninjaman").style.left = leftValue+"px";
+    		document.getElementById("ninjaman").style.top = topValue+"px";
+			
+    	}
+		document.onkeydown = function(e){
+    		console.log(e);
+			
+    		if(e.keyCode == 65 && leftValue > 0) { // LEFT
+    			leftValue = leftValue - 10;
+				direction = "left";
+    			}
+    		else if (e.keyCode == 68 && leftValue <= 150) { // RIGHT
+    			leftValue = leftValue + 10;    	
+				direction = "right";	
+    		}
+			
+
+    		else if (e.keyCode == 83 && topValue < 160) { // DOWN
+				topValue = topValue + 10;
+				direction = "down";
+    		}
+    		else if (e.keyCode == 87 && topValue > 0) { // UP
+				topValue = topValue - 10;
+				direction = "top";
+			}
+    		update();
+
+        }
+*/
+</script>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Perfil</title>
+        <link rel="stylesheet" href="hacerconexionesstyle.css">
+    </head>
+    <body>
+        
+        <div id="maincontainer">
+            <div class="barranavegacion"> 
+                <h1>Perfil</h1>
+                <a href="#Inicio">Inicio</a>
+                <a href="#MiPerfil">Mi Perfil</a>
+                <a href="#Encontrarconexiones">Encontrar conexiones</a>
+                <button type="button" class="logout">
+                    <span class="signout"></span> Cerrar Sesion
+                </button>
+            </div>
+            <div class="contenido">
+                <div class="cuerpo">
+                    <div class="usercard">
+                        <div class = "header">
+                            <img src="user-circle.png" alt="fotoperfil" class = "fotoperfil"></img>
+                        </div>
+                        <div class="userbody" >
+                            <h1 id ="nombreUser">Felipe Romero</h1>
+                            <h3>
+                                <img src="map-marker.png" alt="Ubicacion" class = "ubi">
+                                Concepción, Chile
+                            </h3>
+                            <p>Full Stack Developer | Ingeniero Comercial | Innovator<br>
+                            Estudiando el proceso</p>
+                            <p >
+                                <a href="#" onclick="changeName()">
+                                    <img class = "ubi" src="gear.png" alt="config">
+                                    Editar Perfil
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                        <div class="educacion">
+                            <div class = "educacionheader">
+                                <h1>Educación</h1>
+                            </div>
+                            <div class="educacionbody">
+                                <h2>Coding Dojo - Full Stack Developer</h2>
+                                <p>Mayo 2022 - Sept 2022</p>
+                                <h3>HTML | CSS | JS | PYTHON</h3>
+                                <h2>Universidad del Desarrollo</h2>
+                                <p>Marzo 2016 - Junio 2021</p>
+                                <h3>Ingeniero Comercial</h3>
+                            </div>
+                        </div>
+                    
+                </div> 
+                <div class="sidepanel">
+                    <div class="solicitudes">
+                        <div class="solicitudesheader" onclick="quitar2()">
+                        <h1><span class = "circle">2</span> Solicitudes de conexión</h1>
+                        </div>
+                        <div class="solicitudesbody">
+                            <form >
+                                <div class="solicitud1" >
+                                        <img src="jane-m.jpg" alt = "friend">Jaime Memes</img>
+                                        <input id = "accept" onclick="aceptar()" type="image" src="accept-circle.png" alt = "aceptar">
+                                        <input id = "deny" onclick="quitar()" type="image" src="close-circle.png" alt = "denegar">
+                                </div>   
+                                <div class="solicitud2" >
+                                        <img src="todd-s.jpg" alt = "friend">Mario Todd</img>  
+                                        <input id = "accept"  onclick="aceptar2()" type="image"src="accept-circle.png" alt = "acceptar">
+                                        <input id = "deny" onclick="quitar2()" type="image" src="close-circle.png" alt = "denegar">
+                                </div>    
+                            </form>
+                        </div>
+                    </div>
+                    <div class="conexiones">
+                        <div class = "conexionesheader">
+                            <h1><span class="circle1">500</span> Conexiones</h1>
+
+                        </div>
+                        <div class="conexionesbody">
+                            <p>
+                                <img src="anne-s.jpg" alt = "friend">
+                                Annabell</img><br>
+                            </p>
+                            <p>
+                                <img src="alayne-s.jpg" alt = "friend">  
+                                Jennifer Lawrence
+                            </p>
+                            <p>
+                                <img src="phil-s.jpg" alt = "friend">  
+                                Steve Jobs
+                            </p>
+                            <p>
+                                <img src="arry-s.jpg" alt = "friend">  
+                                Btc to the moon
+                            </p>
+                        </div>
+                        <div class="conexionesbottom">
+                            <a href="#">Ver más</a>
+
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script src="hacerconexionesscript.js"></script>
+    </body>
+</html>

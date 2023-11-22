@@ -1,0 +1,20 @@
+h1{
+    background-color: black;
+    color: cyan;
+
+}
+
+h2{
+    background-color:purple;
+    color: white;
+    text-align: center;
+    font-style:italic;
+}
+
+h3{
+    background-color:darkturquoise;
+    color: light black;
+    text-align: right;
+    text-decoration: underline;
+    border: 100px black;
+}

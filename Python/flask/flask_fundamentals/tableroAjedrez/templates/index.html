@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}"> 
+    <!--<link rel="stylesheet" href="/static/css/style.css">-->
+</head>
+<body>
+    <h2>CheckBoard</h2>
+
+    <table>
+        {% for i in range(num):%}
+            <tr>
+                {%for j in range(num):%}
+                <td class ="white"></td>
+                <td class ="black"></td>
+                {%endfor%}
+            </tr>
+            <tr>
+                {%for j in range(num):%}
+                <td class ="black"></td>
+                <td class ="white"></td>
+                {%endfor%}
+            </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>

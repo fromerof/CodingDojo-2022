@@ -1,0 +1,46 @@
+#buscar {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    border: 2px solid ;
+    border-radius: 30px;
+    text-align: center;
+    background-color:beige;
+    color:lightseagreen;
+    width: 10%;
+    height: 4%;
+    
+
+}
+
+#signomas {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    border: 0px solid ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:lightseagreen;
+    color: white;
+    font-size: 130%;
+}
+
+#cuenta{
+    position: absolute;
+    border: 2px  black solid ;
+    border-radius: 0%;
+    top: 170px;
+    left: 100px;
+    width: 10%;
+    height: 4%;
+    background-color:royalblue;
+    color: white;
+    font-size:100%;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+::placeholder {
+    color:lightseagreen;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Success</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>       
+        <nav class="d-flex justify-content-between align-items-center col-12">
+            <div class="d-flex col-4 justify-content-around">
+                <h2>{{user.first_name}}</h2>
+                <h4 >All TV Shows:</h4>
+            </div>
+        </nav>
+            <div class="d-flex justify-content-end">
+                    <p><a href="/add/tvshow/">+ Create   |</a></p>
+                    <a href="/logout">  Logout</a>
+            </div>   
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Network</th>
+                        <th>Release Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for tv in tvshows%}
+                        <tr>
+                            <td>{{tv.title}}</td>
+                            <td>{{ tv.network }}</td>
+                            <td>{{tv.release_date}}</td>
+                            <td>
+                                <a href="/tvshow/{{tv.id}}">Show</a>
+                                {% if tv.user_id == session.user_id %}
+                                    <a href="/edit/tvshow/{{tv.id}}">Edit</a>
+                                    <a href="/delete/tvshow/{{tv.id}}">Delete</a>
+                                {%endif%}
+                            </td>
+                        </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

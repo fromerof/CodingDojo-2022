@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: silver;
+    font-family: "roboto", sans-serif;
+}
+#maincontainer {
+    width: 810px;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+.barranavegacion {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display:flex;
+}
+.barranavegacion h1 {
+    color: white;
+    padding: 30px;
+    margin-left: 5px;
+}
+.buscar {
+    height:30px;
+    width: 300px;
+    margin-top:40px;
+    margin-left:50px;
+    text-align: start;
+}
+.logout {
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    background-color: deepskyblue;
+    color: white;
+}
+.contenido {
+    display:flex;
+    margin-top:20px;
+}
+.usercard {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;   
+    display: flex;
+}
+
+.usercard2 {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;   
+    display: flex;
+    margin-top:20px;
+}
+
+
+.userbody {
+    margin:20px;
+    margin-top:10px;
+}
+.userbody2 {
+    margin:20px;
+    margin-top:10px;
+}
+
+.userbody h1,h3,p, input {
+    margin-top:10px;
+    text-align:center;
+}
+.likes{
+    margin-top:20px;
+    height: 40px;
+    width: 100px;
+    background-color: yellow;
+    box-shadow: 4px 5px 3px black;
+}
+.userdescription h3 {
+    margin-top:70px;
+    margin-left:50px;
+    text-align:start;
+}
+
+.educacion {
+    width:500px;
+    height:300px;
+    background-color: white;
+    margin-top:30px;
+    border: 2px solid black;
+    border-radius: 5px;   
+    
+}
+.sidepanel {
+    margin-left:30px;
+}
+
+.solicitudes {
+    height: 170px;
+    width: 270px;
+    background-color:white;
+    border: 2px solid black;
+}
+
+.solicitudesbody {
+    padding:5px;
+    display: inline-block;
+    margin-top:20px;
+    margin-left:10px;
+
+}
+#definition {
+    margin-top:20px;
+    width: 230px;
+    height:40px;
+    background-color:green;
+    color:black;
+}
+#definition::placeholder {
+    color:black;
+}
+
+
